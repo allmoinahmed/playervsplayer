@@ -5,8 +5,35 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <style>
+            .container {
+                width: 50vw;
+                margin: 0 auto;
+            }
+
+            .input {
+                margin-bottom: 10px;
+            }
+        </style>
     </head>
     <body>
+        <div class="container">
+            <h1>Lets play a Luck Game</h1>
+            <p class="lucky-number">Lucky Number <span>0</span></p>
+            <p>Player-One : <span id="p1">0</span> Player-Two: <span id="p2">0</span></p>
+            <div class="input">
+                <form>
+                    <input type="number" id="luck-input">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </form>
+            </div>
+            <div>
+                <button class="p1btn">Player One</button>
+                <button class="p2btn">Player Two</button>
+            </div>
+        </div>
 
+        <script src="main.js"></script>
     </body>
 </html>
